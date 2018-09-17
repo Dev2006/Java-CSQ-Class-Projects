@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\JAVA DEVELOPMENT\JAVA CSQ Class\.metadata\.plugins\org.eclipse.jdt.core
+2441218859.index
+3384883348.index

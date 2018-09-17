@@ -9,9 +9,9 @@ public class BinaryTree {
 		Random rand = new Random();
 		Tree t = new Tree();
 		
-		int reps = rand.nextInt(50);
+		int length = rand.nextInt(50);
 		
-		for(int i = 0; i < reps; i++) {
+		for(int i = 0; i < length; i++) {
 			int num = rand.nextInt(100);
 			t.addValue(num);
 		}
