@@ -1,17 +1,20 @@
 package intBinaryTree;
 
 public class Node {
-	public Integer val;
+	public int val = 0;
 	public Node left = null;
 	public Node right = null;
 	
-	public Node(int val) {
+	public Node() {
 		
-		this.val = new Integer(val);
+		this.val = 0;
 	}
 	
-	public Node() {}
-
+	public Node(int val) {
+		
+		this.val = val;
+	}
+	
 	public void addNode(Node n) {
 		
 		if(this.val >= n.val) {
@@ -47,7 +50,7 @@ public class Node {
 		if(this.val == val) return true;
 		else {
 			
-			if(this.left != null && this.val >= val) return this.left.search(val);
+			if(this.left != null && this.val > val) return this.left.search(val);
 			
 			if(this.right != null && this.val < val) return this.right.search(val);
 		}
