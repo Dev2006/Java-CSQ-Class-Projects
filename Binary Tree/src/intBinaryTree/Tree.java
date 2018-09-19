@@ -5,7 +5,7 @@ public class Tree {
 	
 	public Tree() {
 		
-		this.root = new Node();
+		this.root = new Node(0);
 	}
 	
 	public Tree(int val) {
@@ -16,7 +16,7 @@ public class Tree {
 	public void addValue(int val) {
 		Node n = new Node(val);
 		
-		if(root.val == null) {
+		if(root.val == 0) {
 			
 			root.val = val;
 		} else {
