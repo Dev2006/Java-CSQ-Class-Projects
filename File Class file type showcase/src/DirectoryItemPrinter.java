@@ -6,7 +6,7 @@ public class DirectoryItemPrinter {
 	public static void main(String[] args) {
 		
 		try {
-			File f = new File("D:\\Extra Files\\File Reader Test");
+			File f = new File("C:\\Users\\Mohit Sharma\\Desktop");
 			
 			if(f.isDirectory()) {
 				
@@ -23,9 +23,15 @@ public class DirectoryItemPrinter {
 		String [] extensions = new String[items.length];
 		
 		//Setting values for unique items
-		for(int i = 0; i < extensions.length; i++) {
+		for(int i = 0; 0 < extensions.length; i++) {
 			
-			extensions[i] = items[i].getName().substring(items[i].getName().lastIndexOf('.'));
+			try {
+				
+				extensions[i] = items[i].getName().substring(items[i].getName().lastIndexOf('.'));
+			} catch (StringIndexOutOfBoundsException e) {
+				
+				
+			}
 		}
 		
 		//prints which files you have
