@@ -23,30 +23,32 @@ public class FileFinder {
 		String [] extensions = new String[items.length];
 		
 		//Setting values for unique items
-		for(int i = 0; i < extensions.length; i++) {
+		
+		try {
 			
-			try {
+			for(int i = 0; i < extensions.length; i++) {
 				
 				if(items[i].getName().substring(items[i].getName().lastIndexOf('.')) != null) {
 					
 					extensions[i] = items[i].getName().substring(items[i].getName().lastIndexOf('.'));
 				} else {
 					
-					extensions[i] = "";
+					extensions[i] = "-";
 				}
-			} catch (StringIndexOutOfBoundsException e) {}
-		}
+			}
+		} catch (StringIndexOutOfBoundsException e) {}
 		
 		//prints which files you have
 		System.out.println("Files in directory:");
 		for (String i : extensions) System.out.println(i);
 		
 		//asks user which files to show
-		String extensionChoice = JOptionPane.showInputDialog("Which files do you want to view");
+		String extensionChoice = "";
+		extensionChoice = JOptionPane.showInputDialog("Which files do you want to view");
 		
 		//Shows the correct files
 		System.out.println("\n" + extensionChoice + " Files:");
-		for (int i = 0; i < items.length; i++) {
+		for (int i = 0; i < extensions.length; i++) {
 			
 			if(extensions[i].equals(extensionChoice)) {
 				
