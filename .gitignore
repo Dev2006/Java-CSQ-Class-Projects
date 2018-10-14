@@ -1,4 +1,5 @@
-/*/bin/
+../*/bin/
+../*/*/bin/
 .metadata./.*
 .metadata/.*
 .metadata/version.ini
