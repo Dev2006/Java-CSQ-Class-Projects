@@ -4,7 +4,7 @@ public class TestEmployee {
 	
 	public static void main(String[] args) {
 		
-		Employee.changeOffice("Microsoft");
+		//Employee.changeOffice("Microsoft");
 		Employee.dispOfficeName();
 	}
 }
