@@ -1,0 +1,8 @@
+../*/bin/
+../*/*/bin/
+.metadata./.*
+.metadata/.*
+.metadata/version.ini
+.recommenders/*
+/.metadata/
+/.recommenders/
